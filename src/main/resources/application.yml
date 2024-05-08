@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=app
+    username: postgres
+    password: root
+
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: liquibase/change-log-master.yaml
